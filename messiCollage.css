@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  }
+  
+  body {
+  box-sizing: border-box;
+  }
+  
+  img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  }
+  
+  .grid-container-class {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12,1fr);
+  /*grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(15,1fr);*/
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  grid-template-areas:
+  "box1 box1 box1 box1 box2 box2 box3 box3 box4 box4 box4 box4"
+  "box1 box1 box1 box1 box2 box2 box3 box3 box4 box4 box4 box4"
+  "box1 box1 box1 box1 box2 box2 box5 box5 box6 box7 box7 box7"
+  "box1 box1 box1 box1 box2 box2 box5 box5 box6 box7 box7 box7"
+  "box1 box1 box1 box1 box2 box2 box5 box5 box8 box8 box8 box8"
+  "box9 box9 box10 box10 box2 box2 box5 box5 box8 box8 box8 box8"
+  "box9 box9 box11 box11 box2 box2 box5 box5 box8 box8 box8 box8"
+  "box9 box9 box11 box11 box13 box13 box13 box13 box8 box8 box8 box8"
+  "box9 box9 box11 box11 box13 box13 box13 box13 box8 box8 box8 box8"
+  "box12 box12 box12 box12 box13 box13 box13 box13 box8 box8 box8 box8"
+  "box12 box12 box12 box12 box13 box13 box13 box13 box8 box8 box8 box8"
+  "box12 box12 box12 box12 box13 box13 box13 box13 box14 box14 box14 box14"
+  ;
+  gap: 10px;
+  }
+  .box1 {
+    grid-area: box1;
+  }
+  .box2 {
+    grid-area: box2;
+  }
+  .box3 {
+    grid-area: box3;
+  }
+  .box4 {
+    grid-area: box4;
+  }
+  .box5 {
+    grid-area: box5;
+  }
+  .box7 {
+    grid-area: box6;
+    background-color: #43A1D5;
+    color: #D5B048;
+    font-family: fantasy;
+    font-weight: 800;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .box6 {
+    grid-area: box7;
+  }
+  .box8 {
+    grid-area: box8;
+  }
+  .box9 {
+    grid-area: box9;
+  }
+  .box10 {
+    grid-area: box10;
+    background-color: #004170;
+    color: #DA291C;
+    font-family: fantasy;
+    font-weight: 800;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .box11 {
+    grid-area: box11;
+  }
+  .box12 {
+    grid-area: box12;
+  }
+  .box13 {
+    grid-area: box13;
+  }
+  .box14 {
+    background-color: #A50044;
+    font-family: fantasy;
+    font-weight: 800;
+    color: #004C99;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    grid-area: box14;
+    border-radius: 5px;
+  }
+
+  .messiPhoto {
+    background-image: url ("https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/75610627_2280925545344987_5141580855566663680_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=106&ccb=1-5&_nc_sid=110474&_nc_ohc=zejXYbHePyAAX9ymrws&_nc_ht=scontent-lga3-1.xx&oh=00_AT8z8v6-mGbzJiwsqXcz1wzdeAvg1GjRzK_aMk0Ov8lKRg&oe=62500401");
+    position: fixed;
+  }
